@@ -26,46 +26,56 @@ PC      960px a víc
 .contact {
   border: 2px solid grey;
   border-radius: 5px;
-  margin: 30px;
-  padding: 15px;
+  margin: 20px 10px;
+  padding: 20px;
   box-shadow: 2px 2px 6px grey;
 }
 
 .contact__foto {
   border-radius: 50%;
+  width: auto;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 16px;
 }
 
 @media screen and (min-width: 540px) {
   .contact-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .contact {
-    flex-basis: calc((100% - 90px) / 2);
-    margin: 15px 0;
+    flex-basis: calc((100% - 20px) / 2);
+    margin: 10px 0;
     display: flex;
     text-align: left;
   }
 
   .contact__foto {
-    flex-basis: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     margin-top: 1rem;
   }
 
   .contact__text {
     padding: 0 15px;
     flex-basis: calc(100% - 130px);
-    flex-shrink: 0;
+    flex-grow: 1;
   }
 }
 
 @media screen and (min-width: 960px) {
   .contact {
-    flex-basis: calc((100% - 75px) / 4);
-    margin: 15px 0;
+    flex-basis: calc((100% - 60px) / 4);
     display: block;
     text-align: center;
+  }
+
+  .contact__foto {
+    width: auto;
+    height: auto;
   }
 }
