@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 :after,
 :before {
@@ -33,7 +34,6 @@ PC      960px a víc
 
 .contact__foto {
   border-radius: 50%;
-  width: auto;
   max-width: 100%;
 }
 
